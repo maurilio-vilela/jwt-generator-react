@@ -36,3 +36,34 @@
     transform: rotate(360deg);
   }
 }
+/* src/App.css */
+body {
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.dark-mode {
+  color: #ffffff; /* Texto claro no modo escuro */
+}
+
+.dark-mode .form-control {
+  background-color: #495057; /* Fundo dos inputs escuros */
+  color: #ffffff;
+}
+
+/* Classe personalizada para o fundo no dark mode */
+.custom-bg {
+  background-color: #f8f9fa; /* Cor de fundo clara para light mode */
+  color: #000; /* Texto escuro no light mode */
+  height: 38px; /* Altura igual aos inputs */
+  width: 100%; /* Mesma largura dos inputs */
+  padding: 0.375rem 0.75rem; /* Mesmo padding que os inputs do Bootstrap */
+  font-size: 1rem; /* Tamanho da fonte dos inputs */
+  display: flex; /* Alinhamento de conteúdo */
+  align-items: center; /* Centralizar o texto verticalmente */
+}
+
+.custom-bg.dark {
+  background-color: #495057; /* Cor de fundo escura no dark mode */
+  color: #ffffff; /* Texto claro no dark mode */
+}
+
